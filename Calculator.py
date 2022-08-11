@@ -6,16 +6,21 @@ print('''
 '''
       )
 
-num1 = int(input("Enter value1 :"))
-num2 = int(input("enter value2:"))
-opr = input("Enter the operator(+,-,*,/)")
-if opr == "+":
-    print(num1 + num2)
-elif opr == "-":
-    print(num1 - num2)
-elif opr == "*":
-    print(num1 * num2)
-elif opr == "/":
-    print(num1 / num2)
-else:
-    print("invalid operand")
+num1 = int(input("Enter number1:-"))
+num2 = int(input("Enter number2:-"))
+operator1 = input("Enter operator(+, -, *, /): ")
+
+match operator1:
+    case "+":
+        print(num1 + num2)
+
+    case "-":
+        print(num1 - num2)
+
+    case "*":
+        print(num1 * num2)
+    case "/":
+        print(num1 / num2)
+
+    case _:
+        print("Invalid operator.")
